@@ -1,0 +1,13 @@
+language: scala
+
+sudo: false
+
+jdk:
+  - oraclejdk8
+
+scala:
+  - 2.10.5
+  - 2.11.7
+
+script:
+  - sbt ";set G8Keys.properties in G8Keys.g8 in Test ~= { _ ++ Map((\"scala_version\" -> \"$TRAVIS_SCALA_VERSION\"), \"name\" -> \"sample\")}; g8Test"

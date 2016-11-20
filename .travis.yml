@@ -10,4 +10,4 @@ scala:
   - 2.11.8
 
 script:
-  - sbt ";set G8Keys.properties in G8Keys.g8 in Test ~= { _ ++ Map((\"scala_version\" -> \"$TRAVIS_SCALA_VERSION\"), \"name\" -> \"sample\")}; g8Test"
+  - sbt ";set g8Properties in g8 in Test ~= { _ ++ Map((\"scala_version\" -> \"$TRAVIS_SCALA_VERSION\"), \"name\" -> \"sample\")}; g8Test"

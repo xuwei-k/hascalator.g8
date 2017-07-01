@@ -2,8 +2,8 @@ scalaVersion := "$scala_version$"
 
 name := "$name$"
 
-libraryDependencies += "com.chuusai" %% "shapeless" % "$shapeless_version$"
 libraryDependencies += "com.github.scalaprops" %% "scalaprops-gen" % scalapropsVersion.value
+libraryDependencies += "com.github.scalaprops" %% "scalaprops-shapeless" % "$scalaprops_shapeless_version$"
 
 licenses := Seq("MIT License" -> url("http://opensource.org/licenses/mit"))
 

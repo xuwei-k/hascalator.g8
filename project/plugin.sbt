@@ -1,3 +1,3 @@
-addSbtPlugin("org.foundweekends.giter8" % "sbt-giter8" % "0.9.0")
+addSbtPlugin("org.foundweekends.giter8" % "sbt-giter8" % "0.12.0-M1")
 
 fullResolvers ~= {_.filterNot(_.name == "jcenter")}

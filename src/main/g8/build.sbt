@@ -7,7 +7,7 @@ libraryDependencies += "com.github.scalaprops" %% "scalaprops-shapeless" % "$sca
 
 licenses := Seq("MIT License" -> url("http://opensource.org/licenses/mit"))
 
-scalapropsWithScalazlaws
+scalapropsWithScalaz
 
 scalapropsVersion := "$scalaprops_version$"
 
@@ -24,7 +24,6 @@ scalacOptions ++= (
 
 val unusedWarnings = (
   "-Ywarn-unused" ::
-  "-Ywarn-unused-import" ::
   Nil
 )
 

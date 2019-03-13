@@ -5,7 +5,6 @@ fullResolvers ~= {_.filterNot(_.name == "jcenter")}
 scalacOptions ++= (
   "-deprecation" ::
   "-unchecked" ::
-  "-Xlint" ::
   "-language:existentials" ::
   "-language:higherKinds" ::
   "-language:implicitConversions" ::

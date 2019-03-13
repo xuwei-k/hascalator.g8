@@ -6,8 +6,8 @@ jdk:
   - oraclejdk8
 
 scala:
-  - 2.11.8
-  - 2.12.1
+  - 2.11.12
+  - 2.12.8
 
 script:
   - sbt ";set g8Properties in g8 in Test ~= { _ ++ Map((\"scala_version\" -> \"$TRAVIS_SCALA_VERSION\"), \"name\" -> \"sample\")}; g8Test"
